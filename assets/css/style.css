@@ -1,0 +1,26 @@
+.image1 {
+
+    background: url("../images/SDskyline.jpg")
+
+}
+
+.jumbotron {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    background-color: rgb(236, 248, 60);
+}
+
+.card {
+    opacity: .8;
+}
+
+.answ{
+    font-weight: 900;
+}
+
+
+.btn-group-vertical {
+
+    align-content: center;
+
+}
