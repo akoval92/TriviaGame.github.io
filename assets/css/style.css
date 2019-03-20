@@ -1,26 +1,64 @@
 .image1 {
-
     background: url("../images/SDskyline.jpg")
-
 }
 
+
+.display-4 {
+    text-decoration: underline;
+}
+
+
 .jumbotron {
+    margin-top: 10px;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     background-color: rgb(236, 248, 60);
 }
 
-.card {
-    opacity: .8;
+
+.btnStart {
+    margin-top: 70px;
 }
 
-.answ{
+.textStart {
+    margin-top: 30px;
+    font-weight: 600;
+
+}
+
+
+#timer {
     font-weight: 900;
 }
 
 
-.btn-group-vertical {
+.card {
+    opacity: .8;
+}
 
+
+.quest {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.questionList{
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+
+.answ{
+    margin-top: 40px;
+    font-weight: 900;
+
+}
+
+
+.btn-group-vertical {
     align-content: center;
+    display: flex;
 
 }

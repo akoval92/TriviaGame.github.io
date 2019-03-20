@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ExploreSanDiegoTriviaGame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="../TriviaGame/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:900i" rel="stylesheet">
+
 
 </head>
 <body>
 
     <div class="image1">
-        <div class="col-md-12">
 
 <div class="jumbotron">
     <h1 class="display-4">Explore San Diego</h1>
-    <h4> Answer all the questions about some of the historic sites of San Diego before the time runs out!</h4>
+    <h4 class="textStart"> Answer all the questions about some of the historic sites of San Diego before the time runs out!</h4>
     <!-- <p> possible pause button instructions</p> -->
     <ul style="list-style-type:none;">
-    <li><a class="btn btn-warning btn-lg" href="#" role="button">Start Game</a></li>
+    <li><a class="btn btn-warning btn-lg  btnStart" href="#" role="button">Start Game</a></li>
     <br>
-    <li><a class="btn btn-warning btn-sm" href="#" role="button">Button</a></li>
+
+    <li><h2 id="timer"></h2></li>
+    <li><h2 id="time">00:60</h2></li>
     </ul>
 </div>
 
@@ -32,11 +34,11 @@
 <div class="col-md-12">
 <div class="card-body">
 
-    <ol class="questionList">
+    <ul class="questionList">
 
 
 
-<li><h5> How many arces are in Balboa Park?</h5></li>
+<li><h5 class="quest"> 1. How many arces are in Balboa Park?</h5></li>
 
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-light wrong answ">975 acres</button>
@@ -45,90 +47,90 @@
                 <button type="button" class="btn btn-light wrong answ">1,390 acres</button>
             </div>
 
-<li> <h5>The ______________ roller coaster in Belmont Park is one of the original rides from when the park first opened in 1925</h5></li>
+<li> <h5 class="quest"> 2. The ______________ roller coaster in Belmont Park is one of the original rides from when the park first opened in 1925</h5></li>
                 
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-light wrong answ">Big Dive</button>
-                <button type="button" class="btn btn-light wrong answ ">*Giant Dipper</button>
-                <button type="button" class="btn btn-light right answ">Colossal Plunge</button>
+                <button type="button" class="btn btn-light right answ ">*Giant Dipper</button>
+                <button type="button" class="btn btn-light wrong answ">Colossal Plunge</button>
                 <button type="button" class="btn btn-light wrong answ">Super Leap</button>
             </div>
 
-<li><h5>When was Shamu, Seaworld's first orca, introduced into the park?</h5></li>
+<li><h5 class="quest"> 3. When was Shamu, Seaworld's first orca, introduced into the park?</h5></li>
                   
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-light wrong answ">1967</button>
                 <button type="button" class="btn btn-light wrong answ ">1980</button>
-                <button type="button" class="btn btn-light right answ">1974 </button>
-                <button type="button" class="btn btn-light wrong answ">*1965</button>
+                <button type="button" class="btn btn-light wrong answ">1974 </button>
+                <button type="button" class="btn btn-light right answ">*1965</button>
              </div>
 
 
-<li><h5>In 2012 there was a basketball game played on the deck of the USS Midway between the SDSU Aztecs and the __________. The Aztecs lost 62-49.</h5></li>
+<li><h5 class="quest"> 4. In 2012 there was a basketball game played on the deck of the USS Midway between the SDSU Aztecs and the __________. The Aztecs lost 62-49.</h5></li>
             
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light wrong answ">*Syracuse Orange</button>
+                <button type="button" class="btn btn-light right answ">*Syracuse Orange</button>
                 <button type="button" class="btn btn-light wrong answ ">Missouri State Bears</button>
-                <button type="button" class="btn btn-light right answ">UC San Diego Tritons </button>
+                <button type="button" class="btn btn-light wrong answ">UC San Diego Tritons </button>
                 <button type="button" class="btn btn-light wrong answ">Indiana State Sycamores</button>
             </div>
 
 
-<li><h5>How long is the Coronado Bridge?</h5></li>
+<li><h5 class="quest"> 5. How long is the Coronado Bridge?</h5></li>
             
                 <div class="btn-group-vertical" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-light wrong answ">7,365ft</button>
                         <button type="button" class="btn btn-light wrong answ ">10,910ft</button>
-                        <button type="button" class="btn btn-light right answ">12,655ft </button>
-                        <button type="button" class="btn btn-light wrong answ">*11,179ft</button>
+                        <button type="button" class="btn btn-light wrong answ">12,655ft </button>
+                        <button type="button" class="btn btn-light right answ">*11,179ft</button>
                      </div>
 
-<li><h5>The original Mission San Diego de Alcalá was founded in 1769 by </h5></li>
+<li><h5 class="quest"> 6. The original Mission San Diego de Alcalá was founded in 1769 by </h5></li>
             
                 <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light wrong answ"></button>
-                        <button type="button" class="btn btn-light wrong answ "></button>
-                        <button type="button" class="btn btn-light right answ"></button>
-                        <button type="button" class="btn btn-light wrong answ"></button>
+                        <button type="button" class="btn btn-light wrong answ">Luis Jayme</button>
+                        <button type="button" class="btn btn-light right answ ">*Junípero Serra</button>
+                        <button type="button" class="btn btn-light right answ">Sebastián Vizcaíno</button>
+                        <button type="button" class="btn btn-light wrong answ">Juan Rodríguez Cabrillo</button>
                      </div>
 
-<li><h5>Question </h5></li>
+<li><h5 class="quest"> 7. What year was the San Diego Natural History Museum founded? </h5></li>
                
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light wrong answ"></button>
-                <button type="button" class="btn btn-light wrong answ "></button>
-                <button type="button" class="btn btn-light right answ"></button>
-                <button type="button" class="btn btn-light wrong answ"></button>
+                <button type="button" class="btn btn-light right answ">*1874</button>
+                <button type="button" class="btn btn-light wrong answ ">1863</button>
+                <button type="button" class="btn btn-light wrong answ">1905</button>
+                <button type="button" class="btn btn-light wrong answ">1916</button>
             </div>
 
-<li><h5>Question </h5></li>
-                
+<li><h5 class="quest"> 8. Ken Allen, the ___________ nicknamed "The Hairy Houdini" was famous for his 3 escapes from his encolsure at the San Diego Zoo in the 1980's. </h5></li>
+             
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light wrong answ"></button>
-                <button type="button" class="btn btn-light wrong answ "></button>
-                <button type="button" class="btn btn-light right answ"></button>
-                <button type="button" class="btn btn-light wrong answ"></button>
+                <button type="button" class="btn btn-light wrong answ">weasel</button>
+                <button type="button" class="btn btn-light wrong answ ">tiger</button>
+                <button type="button" class="btn btn-light right answ">*orangutan</button>
+                <button type="button" class="btn btn-light wrong answ">panda</button>
              </div>
 
-<li><h5>Question </h5></li>
+<li><h5 class="quest"> 9. Thomas and Anna Whaley claimed their home was haunted by ___________ </h5></li>
                
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-light wrong answ"></button>
-                    <button type="button" class="btn btn-light wrong answ "></button>
-                    <button type="button" class="btn btn-light right answ"></button>
-                    <button type="button" class="btn btn-light wrong answ"></button>
+                    <button type="button" class="btn btn-light wrong answ"> Jacob "Butcher" Butchson</button>
+                    <button type="button" class="btn btn-light wrong answ "> William "Wild Bill" Smith</button>
+                    <button type="button" class="btn btn-light wrong answ"> John "Southern Jo" Jones</button>
+                    <button type="button" class="btn btn-light right answ"> *James "Yankee Jim" Robinson</button>
                  </div>
 
-<li><h5>Question </h5></li>
+<li><h5 class="quest"> 10. The Old Point Loma Lighthouse was replaced by a new lighthouse at a lower elevation in ____. </h5></li>
                     
             <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-light wrong answ"></button>
-                    <button type="button" class="btn btn-light wrong answ "></button>
-                    <button type="button" class="btn btn-light right answ"></button>
-                    <button type="button" class="btn btn-light wrong answ"></button>
+                    <button type="button" class="btn btn-light right answ">*1891</button>
+                    <button type="button" class="btn btn-light wrong answ ">1901</button>
+                    <button type="button" class="btn btn-light wrong answ">1899</button>
+                    <button type="button" class="btn btn-light wrong answ">1906</button>
                  </div>
           
-            </ol>
+            </ul>
 
 
 
@@ -137,6 +139,13 @@
 
 
           <p class="card-text">win lose stuff.</p>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+
+
+
         </div>
         </div>
       </div>
