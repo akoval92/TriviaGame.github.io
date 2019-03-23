@@ -1,64 +1,78 @@
-.image1 {
+.image1 {                                                   /*Background Image class = image1*/
     background: url("../images/SDskyline.jpg")
 }
 
 
-.display-4 {
-    text-decoration: underline;
-}
-
-
-.jumbotron {
-    margin-top: 10px;
+.jumbotron {                                   /*Jumbotron Card(explore San Diego, instructions, button, timer*/
+   
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     background-color: rgb(236, 248, 60);
 }
 
 
-.btnStart {
+.btnStart {                                     /*Start Button*/
     margin-top: 70px;
 }
 
-.textStart {
+.textStart {                                    /*Instructions*/
     margin-top: 30px;
     font-weight: 600;
 
 }
 
 
-#timer {
-    font-weight: 900;
-}
-
-
-.card {
+.card {                                     /*Main Card (Qs and As)*/
     opacity: .8;
 }
 
 
-.quest {
+.quest {                                        /*Question header*/
     margin-top: 50px;
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
 
-.questionList{
+.questionList{                                  /* ul class*/
     margin-top: 50px;
     list-style-type: none;
+    
 }
 
 
-.answ{
+.answ{                                          /*answer class*/
     margin-top: 40px;
     font-weight: 900;
 
 }
 
 
-.btn-group-vertical {
+.btn-group-vertical {                       /*Button group class*/
     align-content: center;
     display: flex;
 
 }
+
+
+.score {                                            /*Score ul class*/
+
+text-align: center;
+font-weight: bolder;
+font-family: 'Architects Daughter', cursive;
+}
+
+
+
+.button {                                       /*button color*/
+
+   background-color: lightskyblue;
+
+}
+
+
+.toggle{
+background-color: red;
+
+}
+/* button:focus{background-color: cadetblue;} */
